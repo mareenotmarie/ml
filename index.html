@@ -756,7 +756,7 @@ library(randomForest)
 # list obsLevels 5 -none- character
 </code></pre>
 
-<h2>Apply prediction to testing subset of training set</h2>
+<h2>Cross validate against a subset of training set we haven't looked at yet</h2>
 
 <pre><code class="r">prediction &lt;- predict(model, testing)
 accuracy &lt;- sum(prediction == testing$classe)/nrow(testing)
